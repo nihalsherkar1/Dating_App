@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "build": "rimraf dist && webpack --mode=production --config webpack.config.js",
+    "build:web": "rimraf dist && webpack --mode=production --config webpack.config.js",
+    "build:android": "cd android && gradlew.bat assembleRelease",
+    "build:ios": "cd ios && xcodebuild -scheme Dating_App_JS -configuration Release -derivedDataPath build",
     "web": "webpack serve --mode development --config webpack.config.js"
   },
   "dependencies": {

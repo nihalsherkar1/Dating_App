@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {Text, View} from 'react-native';
+import Company from './components/Company';
 
 const App = () => {
   return (
     <View>
-      <Text style={{fontSize: 30}}>
-        Hello, GammingProism Pvt Ltd Date : 25/09/24!
-      </Text>
+      <Text>Hello</Text>
+      <Company />
     </View>
   );
 };
