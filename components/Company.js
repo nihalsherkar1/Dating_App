@@ -38,6 +38,7 @@ const Company = () => {
         <Button title="Clear" onPress={handleReset} color={'green'} />
       </View>
 
+      {/* Here we using props we passing emp data from Company to Employee */}
       <Employee data={emp} />
     </View>
   );
